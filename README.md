@@ -10,7 +10,9 @@ Cara menjalankan project:
 
 Cara menjalan project di  googlecolab:
 1. Buka file dengan link https://colab.research.google.com/drive/1hqFL-b9O2VPA-orOHTXP5IPZWbdBOVBi?usp=sharing
-2. Kemudian jalan semua perintah yang terdapat pada googlecolab
+2. Kemudian copy semua code yang terdapat pada googlecollab ke local googlecolab
+3. Jalankan semua code 
+
 Note: pada project ini saya menggunakan googlecolab dikarenakan terdapat permasalan python di pc/laptop saya
 
 
