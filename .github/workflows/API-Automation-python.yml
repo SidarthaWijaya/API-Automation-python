@@ -17,8 +17,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
+    
+    - name: Set up Python
       uses: actions/setup-python@v3
+      with:
+        python-version: '3.8'
     
           
     - name: Install dependencies
@@ -34,8 +37,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pip install pytest
-        PATH:APi_Autmation_python.ipynb
-        pytest
+        pytest --junitxml=test-results.xml
         
     
