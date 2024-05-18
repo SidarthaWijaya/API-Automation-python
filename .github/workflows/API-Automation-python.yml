@@ -39,6 +39,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
+        python APi_Autmation_python.ipynb
         pytest test
         
     
