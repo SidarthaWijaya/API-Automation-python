@@ -31,6 +31,7 @@ jobs:
         python -m pip install flake8 pytest
         pip install jupyterlab
         pip install notebook
+        pip install git+https://github.com/pytest-dev/pytest-html.git
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
