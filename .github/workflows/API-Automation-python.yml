@@ -40,8 +40,8 @@ jobs:
 
     - name: Convert and run Jupyter notebook
       run: |
-        jupyter nbconvert --to script APi_Autmation_python.ipynb
-        python APi_Autmation_python.py
+        jupyter execute APi_Autmation_python.ipynb
+      
     - name: Test with pytest
       run: |
         pip install pytest
