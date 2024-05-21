@@ -44,9 +44,16 @@ jobs:
       run: |
         jupyter execute APi_Autmation_python.ipynb
       shell: bash
-      
-    - name: Test with pytest
+
+    - name: Install dependencies
       run: |
-        pip install pytest
-        pytest
+        python -m pip install --upgrade pip
+        pip install pytest requests selenium
+        pip install webdriver-manager
+
+    name: Run tests
+      env:
+        DISPLAY: ":99.0"
+      run: |
+        pytest test_reqres.py
     
