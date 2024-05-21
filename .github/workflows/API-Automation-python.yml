@@ -56,4 +56,15 @@ jobs:
         DISPLAY: ":99.0"
       run: |
         pytest test_reqres.py
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: results.xml
+
+
+
+        
     
