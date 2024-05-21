@@ -51,7 +51,7 @@ jobs:
         pip install pytest requests selenium
         pip install webdriver-manager
 
-    name: Run tests
+    - name: Run tests
       env:
         DISPLAY: ":99.0"
       run: |
